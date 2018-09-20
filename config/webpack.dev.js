@@ -237,8 +237,9 @@ module.exports = function (options) {
         // app.get('/some/path', function(req, res) {
         //   res.json({ custom: 'response' });
         // });
-	app.get('/alex', (req,res)=> res.send('it\'s anh'))
+	app.get('/alex', (req,res)=> res.send('it\'s alex'))
 	app.get('/jmrv', (req,res)=> res.send('it\'s marco'))
+	app.get('/anh', (req,res)=> res.send('it\'s anh'))
       },
       proxy: {
         '/api':  `http://localhost:${process.env.SERVER_PORT || '4040'}`
