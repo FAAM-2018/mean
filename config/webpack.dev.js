@@ -240,6 +240,7 @@ module.exports = function (options) {
 	app.get('/alex', (req,res)=> res.send('it\'s alex'))
 	app.get('/marco', (req,res)=> res.send('it\'s marco'))
 	app.get('/anh', (req,res)=> res.send('it\'s anh -.-'))
+	app.get('/federico', (req,res)=> res.send('it\'s Federico'))
       },
       proxy: {
         '/api':  `http://localhost:${process.env.SERVER_PORT || '4040'}`
